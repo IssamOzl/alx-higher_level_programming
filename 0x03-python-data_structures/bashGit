@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod u+x $gitFile
+git add $gitFile
+git commit -m "$gitFile"
+git push
