@@ -1,16 +1,16 @@
 #!/usr/bin/python3
+import sys
 
 if __name__ != "__main__":
     exit()
 
-from calculator_1 import add
-import sys
+argc = len(sys.argv) - 1
 
-#-1 to exclude the file name passed as argument
-nArgsCount = len(sys.argv) - 1
-
-pCount = 0
-
-for i in range (1, nArgsCount+1):
-    pCount = add(pCount, int(sys.argv[i]))
-print(pCount)    
+i = 0
+result = 0
+for arg in sys.argv:
+    if i != 0:
+        result += int(arg)
+    else:
+        i += 1
+print("{:d}".format(result))
