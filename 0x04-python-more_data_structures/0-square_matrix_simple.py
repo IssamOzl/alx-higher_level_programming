@@ -9,11 +9,3 @@ def square_matrix_simple(matrix=[]):
             nMyl.append(val**2)
         nRes.append(nMyl)
     return nRes
-
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-print(square_matrix_simple(matrix))
