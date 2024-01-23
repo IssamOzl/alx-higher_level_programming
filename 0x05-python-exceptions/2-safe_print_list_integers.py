@@ -10,6 +10,3 @@ def safe_print_list_integers(my_list=[], x=0):
             continue
     print()
     return nbprint
-
-lst = [1,2,3]
-safe_print_list_integers(lst,2)
