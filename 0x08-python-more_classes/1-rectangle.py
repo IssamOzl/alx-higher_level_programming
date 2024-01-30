@@ -9,7 +9,7 @@ This module provides a simple Rectangle class.
 class Rectangle:
     """A simple Rectangle class"""
 
-    def __init__(self,width=0,height=0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
         
@@ -18,7 +18,7 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self,val):
+    def width(self, val):
         if type(val) != int:
             raise TypeError("width must be an integer")
         if val < 0:
@@ -31,7 +31,7 @@ class Rectangle:
         self.__height = height
         
     @height.setter
-    def height(self,val):
+    def height(self, val):
         if type(val) != int:
             raise TypeError("height must be an integer")
         if val < 0 :
