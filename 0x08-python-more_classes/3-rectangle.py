@@ -45,11 +45,12 @@ class Rectangle:
             return 0
         return (2 * self.__width) + (2 * self.__height)
 
-    def __str__(self):
-        res = ""
-        if not (self.__width == 0 or self.__height == 0):
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    res += "#"
-                res += "\n"
-        return res
+    def  __str__(self):
+        total = ""
+        if self.__height == 0 or self.width == 0:
+            return total
+        for i in range(self.__height):
+            total += ("#" * self.__width)
+            if i is not self.__height - 1:
+                total += "\n"
+        return total
