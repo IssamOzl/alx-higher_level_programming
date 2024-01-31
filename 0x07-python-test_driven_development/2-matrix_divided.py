@@ -9,8 +9,8 @@ def matrix_divided(matrix, div):
     Each row of the matrix must be of the same size
     div must be a number (integer or float)
     """
-    mtTypeError = "matrix must be a matrix (list of lists) of integers/floats"
 
+    mtTypeError = "matrix must be a matrix (list of lists) of integers/floats"
     if type(div) not in (int, float):
         raise TypeError("div must be a number")
     if div == 0:
