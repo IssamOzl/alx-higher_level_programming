@@ -1,3 +1,9 @@
+============================================
+How to use 1-my_list.txt
+============================================
+
+This library is very simple, since it only has one function called
+ ''print_sorted()''
 >>> MyList = __import__('1-my_list').MyList
 >>> my_lst = MyList()
 >>> isinstance(my_lst, list)
@@ -9,3 +15,35 @@ True
 >>> my_lst.append(3)
 >>> my_lst.print_sorted()
 [2, 3, 7]
+
+:: whit zero values
+   >>> my_lst.append(0)
+   >>> my_lst.print_sorted()
+   [0, 2, 3, 7]
+
+:: with infinite integer
+   >>> my_lst.append(int('inf'))
+   Traceback (most recent call last):
+   ValueError: invalid literal for int() with base 10: 'inf'
+
+:: with negative values
+   >>> my_lst.append(-15)
+   >>> my_lst.print_sorted()
+   [-15, 0, 2, 3, 7]
+
+:: when repeat an element
+   >>> my_lst.append(-15)
+   >>> my_lst.append(0)
+   >>> my_lst.append(7)
+   >>> my_lst.print_sorted()
+   [-15, -15, 0, 0, 2, 3, 7, 7]
+
+:: when all elementes in the list are the same
+   >>> my_lst.clear()
+   >>> my_lst.append(5)
+   >>> my_lst.append(5)
+   >>> my_lst.append(5)
+   >>> my_lst.append(5)
+   >>> my_lst.append(5)
+   >>> my_lst.print_sorted()
+   [5, 5, 5, 5, 5]
