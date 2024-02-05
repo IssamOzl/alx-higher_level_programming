@@ -10,10 +10,10 @@ class Rectangle(BaseGeometry):
     """A representation of a rectangle"""
     def __init__(self, width, height):
         """instantiation of the rectangle"""
-        if self.integer_validator("width", width):
-            self.__width = width
-        if self.integer_validator("height", height):
-            self.__height = height
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
         """ area = l x w """
