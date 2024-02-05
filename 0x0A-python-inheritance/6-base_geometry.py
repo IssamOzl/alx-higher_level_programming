@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" 6-base_geometry """
 
 
 class BaseGeometry:
