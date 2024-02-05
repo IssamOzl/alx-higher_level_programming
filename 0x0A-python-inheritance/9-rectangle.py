@@ -2,7 +2,6 @@
 """
 Contains the class BaseGeometry and subclass Rectangle
 """
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -20,5 +19,6 @@ class Rectangle(BaseGeometry):
         return(self.__width * self.__height)
 
     def __str__(self):
+        """ str for print """
         return("[{}] {}/{}".format(type(self).__name__,
                                    self.__width, self.__height))
