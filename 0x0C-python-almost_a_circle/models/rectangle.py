@@ -14,7 +14,7 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Parameters:
+        Params:
             width(int): width of rectangle
             height(int): height
             x(int): co-ordinate of the rectangle
