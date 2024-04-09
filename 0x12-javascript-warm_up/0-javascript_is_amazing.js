@@ -2,4 +2,4 @@
 // Print Javascript is 
 
 const myVar = 'Javascript is amazing';
-console.log(myVar);amazingstring 
+console.log(myVar);
