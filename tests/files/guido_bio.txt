@@ -1,0 +1,5 @@
+Guido van Rossum, né le 31 janvier 1956 à Harlem aux Pays-Bas, est un développeur connu pour être le créateur et leader du projet du langage de programmation Python.
+
+Au sein de la communauté pythonienne, il est, jusqu’en juillet 2018, un Benevolent Dictator for Life « dictateur bienveillant à vie », ce qui signifie qu'il suit le développement de Python et arbitre lorsque la situation le requiert.
+
+Il est également l'auteur du navigateur web Grail entièrement programmé en Python ; il n'a pas été actualisé depuis 1999. Le nom fait référence au film Monty Python and the Holy Grail.

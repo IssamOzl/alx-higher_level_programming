@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+from math import pi
+from circles import circle_area
+import unittest
+
+class TestCircleArea(unittest.TestCase):
+    def type_check(self):
+        # test that int is passed as param
+        self.assertRaises(TypeError,circle_area,'1')
+        self.assertRaises(TypeError,circle_area,True)
+        self.assertRaises(TypeError,circle_area,3+5j)
+    def test_area(self):
+        #test areas with radius >=0
+        self.assertAlmostEqual(circle_area(1),pi)
+        self.assertAlmostEqual(circle_area(0),0)
+    def test_negativeVals(self):
+        #test <0
+        self.assertRaises(ValueError,circle_area , -1)

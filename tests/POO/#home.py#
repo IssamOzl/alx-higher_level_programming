@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+import oop_init as obj
+
+
+""" oop_init test """
+
+p = obj.Person('Swaroop')
+p.say_hi()
