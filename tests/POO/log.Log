@@ -1,0 +1,9 @@
+INFO:root:Hello world
+INFO 2024-01-26 01:25:20,291 - Hello world
+DEBUG 2024-01-26 01:28:37,790 - this is debug level message
+INFO 2024-01-26 01:28:37,790 - this is info level message
+DEBUG 2024-01-26 01:28:54,093 - this is debug level message
+INFO 2024-01-26 01:28:54,093 - this is info level message
+WARNING 2024-01-26 01:28:54,093 - this is warning level message
+ERROR 2024-01-26 01:28:54,093 - this is error level message
+CRITICAL 2024-01-26 01:28:54,093 - this is critical level message

@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+try:
+    f = open("guido_bio.txt")
+except Exception e:
+    print(e)

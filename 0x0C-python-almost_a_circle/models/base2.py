@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ BASE module """
+from json import dumps, loads
+import csv
 
 
 class Base:

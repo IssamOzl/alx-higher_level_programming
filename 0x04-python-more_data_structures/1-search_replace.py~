@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+def search_replace(my_list, search, replace):
+    newList = []
+    if search not in my_list:
+        newList = myList
+    else:
+        newList = [x if x != search else replace for x in my_list]
+
+    return newList
+
+
+lst = [10,2,10,2]
+newL = search_replace(lst,10,1)
+print(newL)

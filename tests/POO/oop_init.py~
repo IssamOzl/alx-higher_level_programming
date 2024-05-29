@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+class Person:
+    def __init__(self,n,a):
+        self.__name = n
+        self.age = a
+
+    def get_name(self):
+        return self.__name
+    
+    def say_hi(self):
+        print("Hello world")
+
+class Person2:
+    """ this class use's private var with getter"""
+    counter = 0
+    
+    def __init__(self,name,age):
+        self.set_name(name)
+        self.set_age(age)
+        Person2.counter +=1
+
+    def set_name(self,name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+
+    def set_age(self,age):
+        if age<0:
+            self.__age = 0
+        elif age>100:
+            self.__age=100
+        else:    
+            self.__age = age
+
+    def get_age(self):
+        return self.__age
+
+    @classmethod
+    def return_count(cls):
+        return cls.counter

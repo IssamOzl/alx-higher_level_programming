@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+# Variables points to objects EX :
+# The 2 vars will point to the same object since str are immutable
+a = "banana"
+b = "banana"
+print("a == b "+a == b)
+print("a is b "+a is b)

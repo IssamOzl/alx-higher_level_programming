@@ -1,0 +1,8 @@
+#!usr/bin/python3
+
+import logging as log
+
+log.basicConfig(filename="./log.Log")
+logger = log.getLogger()
+
+logger.info("Hello world")

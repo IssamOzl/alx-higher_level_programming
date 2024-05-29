@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+def print_reversed_list_integer(my_list=[]):
+    newList = my_list[0:]
+    newList.reverse()
+    for i in range(len(newList)):
+            print("{:d}".format(newList[i]))
